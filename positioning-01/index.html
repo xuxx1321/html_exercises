@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Positioning</title>
+
+    <style>
+
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: bisque;
+
+        }
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            position: fixed;
+            top:50px;
+            right: 75px;
+            /*z-index: 3;*/
+        }
+
+        .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: relative;
+            top: -50px;
+            left: 50px;
+            /*z-index: 2;*/
+        }
+
+        .box3 {
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            position: absolute;
+            top: 125px;
+            left: 25px;
+            /*z-index: 1;*/
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+</div>
+
+</body>
+</html>
