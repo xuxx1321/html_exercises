@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <title>Deals</title>
+    <style>
+
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .restaurant_name{
+            max-width:50%;
+            min-width:900px;
+            max-height:500px;
+            min-height:21%;
+            margin: 0;
+            position: relative;
+            top: -250px;
+            right: -350px;
+            font-family: 'Pacifico', cursive;
+            font-size: 35pt;
+
+        }
+
+        .topnav a {
+            margin: 0;
+            position: relative;
+            top: -390px;
+            text-align: center;
+            padding: 10px 60px;
+            text-decoration: none;
+            font-size: 24px;
+            background-color: red;
+            font-family: 'Montserrat Alternates', sans-serif;
+            color: white;
+            max-width: 1170px;
+            min-width: 1000px;
+
+
+        }
+
+        .topnav ul li {
+            margin: 0;
+            display: inline-block;
+            padding: 20px;
+
+        }
+
+        .topnav ul {
+            width: 1500px;
+            margin: 0;
+            padding: 5px;
+            list-style-type: none;
+            text-align: center;
+            max-width: 1500px;
+            min-width: 1500px;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: red;
+        }
+
+        .topnav a:active {
+            background-color: white;
+            color: red;
+        }
+
+
+        .info{
+            font-family: 'Montserrat Alternates', sans-serif;
+            color: red;
+            font-size: 14pt;
+            position: relative;
+            top: -625px;
+            left: 1260px;
+        }
+
+        .logo{
+            position: relative;
+            left: 80px;
+        }
+
+        .left_checkerboard{
+            position: fixed;
+            top: -726px;
+            left: 0;
+        }
+
+        .right_checkerboard{
+            position: fixed;
+            right: 0;
+            top: -726px;
+            z-index: 5;
+        }
+
+        .slogan1{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 16pt;
+            position: relative;
+            right: -355px;
+            top: -340px;
+        }
+
+        .slogan2{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 16pt;
+            position: relative;
+            right: -875px;
+            top: -386px;
+        }
+
+        .big_wrapper{
+            margin: 0;
+            width: 960px;
+        }
+
+        .coupon1{
+            position: relative;
+            top: -510px;
+            left: 170px;
+            z-index: 1;
+        }
+
+        .coupon1 p {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 16pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -585px;
+            left: 15px;
+            z-index: 2;
+        }
+
+        .coupon1 h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 29pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -560px;
+            left: 15px;
+            z-index: 2;
+        }
+
+        .coupon1 h2:hover{
+            color: black;
+            text-shadow: 2px 2px white;
+        }
+
+
+        .coupon2{
+            position: relative;
+            top: -1318px;
+            left: 780px;
+            z-index: 1;
+        }
+
+        .medtext1 {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 16pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -550px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .smalltext{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 12pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -730px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .smalltext1{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 12pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -692px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .coupon2 h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 29pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -560px;
+            left: 20px;
+            z-index: 2;
+            line-height: 40px;
+        }
+
+        .coupon2 h2:hover{
+            color: black;
+            text-shadow: 2px 2px white;
+        }
+
+
+        .coupon2text{
+            position: relative;
+            top: -30px;
+        }
+
+        .coupon3{
+            position: relative;
+            top: -1895px;
+            left: 170px;
+            z-index: 1;
+        }
+
+        .coupon3 h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 29pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -560px;
+            left: 20px;
+            z-index: 2;
+            line-height: 40px;
+        }
+
+        .coupon3 h2:hover{
+            color: black;
+            text-shadow: 2px 2px white;
+        }
+
+
+        .medtext2 {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 16pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -550px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .smalltext2{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 12pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -730px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .smalltext3{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 12pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -692px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .coupon3text{
+            position: relative;
+            top: -30px;
+        }
+
+        .coupon4{
+            position: relative;
+            top: -2817px;
+            left: 780px;
+            z-index: 1;
+        }
+
+        .coupon4 p {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 16pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -580px;
+            right: -15px;
+            z-index: 2;
+        }
+
+        .coupon4 h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 29pt;
+            color: white;
+            text-shadow: 2px 2px black;
+            position: relative;
+            top: -565px;
+            right: -15px;
+            z-index: 2;
+            line-height: 50px;
+        }
+
+        .coupon4 h2:hover{
+            color: black;
+            text-shadow: 2px 2px white;
+        }
+
+
+        .box1{
+              background: rgba(255,0,0,0.75);
+              width: 200px;
+              height: 300px;
+              position: relative;
+              top: -304px;
+              z-index: 1;
+          }
+
+        .box2{
+            background: rgba(255,0,0,0.75);
+            width: 200px;
+            height: 300px;
+            position: relative;
+            top: -304px;
+            z-index: 1;
+        }
+
+        .box3{
+            background: rgba(255,0,0,0.75);
+            width: 200px;
+            height: 300px;
+            position: relative;
+            top: -304px;
+            z-index: 1;
+        }
+
+        .box4{
+            background: rgba(255,0,0,0.75);
+            width: 200px;
+            height: 300px;
+            position: relative;
+            top: -304px;
+            z-index: 1;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="big_wrapper">
+
+    <div class="Header">
+
+        <div class="logo">
+            <a href="home.html"><img src="pizza_king_redesign_images/pizzakinglogo.jpg" alt="Pizza King Logo" width="250px"/></a>
+        </div>
+
+        <div class="restaurant_name">
+            <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+            <h1> Pizza King La Crosse</h1>
+        </div>
+
+        <div class="slogan1">
+            <p>The Best Pizza in Town</p>
+        </div>
+
+        <div class="slogan2">
+            <p>The Best Subs and Gyros Around</p>
+        </div>
+
+        <div class="topnav">
+            <center><ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul></center>
+
+        </div>
+
+        <div class="info">
+            <p>2929 South Ave <br>La Crosse, WI 54601</p>
+            <p>(608)-788-1926<br>FAX: (608)-788-1975</p>
+        </div>
+
+        <div class="left_checkerboard">
+            <img src="pizza_king_redesign_images/checkerboardstrip.jpg" alt="checkerboard"/>
+        </div>
+
+        <div class="right_checkerboard">
+            <img src="pizza_king_redesign_images/checkerboardstrip.jpg" alt="checkerboard"/>
+        </div>
+
+    </div>
+
+    <div class="coupon1">
+        <a href="deals.html"><img src="pizza_king_redesign_images/hand-tossed-pizza.jpg" alt="coupon1" width="560px" height="300px"/></a>
+        <div class="box1"></div>
+        <h2>$1.50 Off</h2>
+        <p>Any New Hand<br>Tossed Pizza</p>
+    </div>
+
+    <div class="coupon2">
+        <a href="deals.html"> <img src="pizza_king_redesign_images/small-thin-crust-pizza.jpg" alt="coupon2" width="560px" height="300px"/></a>
+        <div class="box2"></div>
+        <div class="coupon2text">
+        <h2>$17.49</h2>
+        <h2>$17.99</h2>
+        <p class="medtext1">16 in Thin Crust<br>Pizza</p>
+        <p class="smalltext">(Baked)</p>
+        <p class="smalltext1">(Unbaked)</p>
+        </div>
+    </div>
+
+    <div class="coupon3">
+        <a href="deals.html"> <img src="pizza_king_redesign_images/large_thin_crust.png" alt="coupon3" width="560px" height="300px"/></a>
+        <div class="box3"></div>
+        <div class="coupon3text">
+        <h2>$13.99</h2>
+        <h2>$14.49</h2>
+        <p class="medtext2">14 in Thin Crust<br>Pizza</p>
+        <p class="smalltext2">(Baked)</p>
+        <p class="smalltext3">(Unbaked)</p>
+        </div>
+    </div>
+
+    <div class="coupon4">
+        <a href="deals.html"> <img src="pizza_king_redesign_images/gyro.jpg" alt="coupon4" width="560px" height="300px"/></a>
+        <div class="box4"></div>
+        <h2>2 for<br>$8.99</h2>
+        <p>Gyros</p>
+</div>
+
+
+
+</div> <!--closing div for big wrapper-->
+
+</body>
+</html>
