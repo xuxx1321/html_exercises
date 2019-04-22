@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <title>Menu</title>
+    <style>
+
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .restaurant_name{
+            max-width:50%;
+            min-width:900px;
+            max-height:500px;
+            min-height:21%;
+            margin: 0;
+            position: relative;
+            top: -250px;
+            right: -350px;
+            font-family: 'Pacifico', cursive;
+            font-size: 35pt;
+
+        }
+
+        .topnav a {
+            margin: 0;
+            position: relative;
+            top: -390px;
+            text-align: center;
+            padding: 10px 60px;
+            text-decoration: none;
+            font-size: 24px;
+            background-color: red;
+            font-family: 'Montserrat Alternates', sans-serif;
+            color: white;
+            max-width: 1170px;
+            min-width: 1000px;
+
+
+        }
+
+        .topnav ul li {
+            margin: 0;
+            display: inline-block;
+            padding: 20px;
+
+        }
+
+        .topnav ul {
+            width: 1500px;
+            margin: 0;
+            padding: 5px;
+            list-style-type: none;
+            text-align: center;
+            max-width: 1500px;
+            min-width: 1500px;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: red;
+        }
+
+        .topnav a:active {
+            background-color: white;
+            color: red;
+        }
+
+
+        .info{
+            font-family: 'Montserrat Alternates', sans-serif;
+            color: red;
+            font-size: 14pt;
+            position: relative;
+            top: -625px;
+            left: 1260px;
+        }
+
+        .logo{
+            position: relative;
+            left: 80px;
+        }
+
+        .left_checkerboard{
+            position: fixed;
+            top: -726px;
+            left: 0;
+            z-index: 10;
+        }
+
+        .right_checkerboard{
+            position: fixed;
+            right: 0;
+            top: -726px;
+            z-index: 10;
+        }
+
+        .slogan1{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 16pt;
+            position: relative;
+            right: -355px;
+            top: -340px;
+        }
+
+        .slogan2{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 16pt;
+            position: relative;
+            right: -875px;
+            top: -386px;
+        }
+
+        .big_wrapper{
+            margin: 0;
+            width: 960px;
+        }
+
+        .menu_navbar{
+            position: fixed;
+            left: 230px;
+            top: 280px;
+        }
+
+        .menu_navbar a {
+            font-family: 'Pacifico', cursive;
+            font-size: 22pt;
+            color: white;
+            text-shadow: 3px 3px black;
+            text-decoration: none;
+            text-align: center;
+
+        }
+
+        .menu_navbar a:hover {
+            color:black;
+            text-shadow: 3px 3px white;
+            text-decoration:none;
+            cursor:pointer;
+        }
+
+        .red_menu_box{
+            height: 420px;
+            width: 240px;
+            background: red;
+            opacity: 0.75;
+            z-index: -2;
+            position: fixed;
+            left: 178px;
+            top: 293px;
+
+        }
+
+        .menu{
+            position: absolute;
+            left: 465px;
+            top:285px;
+        }
+
+        .category{
+            font-family: 'Pacifico', cursive;
+            font-size: 36pt;
+            line-height: 30px;
+            color: red;
+        }
+
+        .food{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 15pt;
+        }
+
+        .type{
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+
+        hr{
+            height: 1px;
+            width: 880px;
+            background-color: black;
+            border-color: inherit;
+            position: relative;
+            top: 0;
+            left: 0;
+
+        }
+
+        .avail{
+            font-size: 11pt;
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+
+        .sub{
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+
+        .pizza_table{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 12pt;
+            text-align: center;
+            position: relative;
+            top: 10px;
+            right: 0px;
+        }
+
+        td {
+            padding:0 5px 0 5px;
+        }
+
+        .pizza_toppings{
+            position: relative;
+            top: 20px;
+            left: 100px;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 12pt;
+        }
+
+        .left{
+            padding: 0 10px 0 10px;
+        }
+
+        .sub_price{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 14pt;
+            text-align: center;
+            position: relative;
+            top: 20px;
+        }
+
+        .price{
+            padding: 0 10px 0 10px;
+        }
+
+        .center{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 15pt;
+            position: relative;
+            left: 350px;
+        }
+
+        .salad_toppings{
+            position: relative;
+            top: 20px;
+            left: 200px;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 12pt;
+            text-align: left;
+        }
+
+        </style>
+
+</head>
+<body>
+
+<div class="big_wrapper">
+
+    <div class="Header">
+
+        <div class="logo">
+            <a href="home.html"><img src="pizza_king_redesign_images/pizzakinglogo.jpg" alt="Pizza King Logo" width="250px"/></a>
+        </div>
+
+        <div class="restaurant_name">
+            <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+            <h1> Pizza King La Crosse</h1>
+        </div>
+
+        <div class="slogan1">
+            <p>The Best Pizza in Town</p>
+        </div>
+
+        <div class="slogan2">
+            <p>The Best Subs and Gyros Around</p>
+        </div>
+
+        <div class="topnav">
+            <center><ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul></center>
+
+        </div>
+
+        <div class="info">
+            <p>2929 South Ave <br>La Crosse, WI 54601</p>
+            <p>(608)-788-1926<br>FAX: (608)-788-1975</p>
+        </div>
+
+        <div class="left_checkerboard">
+            <img src="pizza_king_redesign_images/checkerboardstrip.jpg" alt="checkerboard"/>
+        </div>
+
+        <div class="right_checkerboard">
+            <img src="pizza_king_redesign_images/checkerboardstrip.jpg" alt="checkerboard"/>
+        </div>
+
+    </div>
+
+    <nav class="menu_navbar">
+        <a href="#appetizers"><p id="nav_apps">Appetizers</p></a>
+        <a href="#pizza"><p id="nav_pizza">Pizza </p></a>
+        <a href="#subs"><p id="nav_subs">Subs</p></a>
+        <a href="#gyros"><p id="nav_gyros">Gyros</p></a>
+        <a href="#salads"><p id="nav_salads">Salads</p></a>
+    </nav>
+
+    <div class="red_menu_box"></div>
+
+    <div class="menu">
+        <div class="appetizers" id="appetizers">
+
+            <h1 class="category">APPETIZERS</h1>
+           <img src="pizza_king_redesign_images/horizontalcheckerboard.jpg" alt="horizontal_checkerboard" width="880px"/>
+
+            <h2 class="type">Garlic Breads</h2>
+            <hr>
+            <p class="food">Garlic Bread . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . . . . . . . . . . . . $3.25</p>
+            <p class="food">Italian Cheese Bread . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . . . . . . . $4.25</p>
+            <p class="food">Spinach Cheese Bread . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . . . . . $5.25</p>
+            <p class="food">Pesto Garlic Cheese Bread . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . . . . $6.25</p>
+            <p class="food" style="font-size: 12pt">Pizza Sauce On The Side . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                .$0.59</p>
+            <br>
+
+            <h2 class="type">Chicken Wings <a class="avail">(Available for take and bake)</a></h2>
+
+            <hr>
+            <p class="food"><b><u>Hot Buffalo and Italian Styles</u></b></p>
+            <p class="food">Ten Wings & One Dipping Sauce. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $8.99</p>
+            <p class="food">Twenty Wings & Two Dipping Sauces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $17.49</p>
+            <p class="food"><b><u>Dipping Sauces</u></b></p>
+            <p class="food">Ranch, Blue Cheese, BBQ Sauce, Honey Mustard, Frank's Red Hot</p>
+
+            <br>
+
+            <div class="pizza" id="pizza">
+                <h1 class="category">PIZZA</h1>
+
+                <img src="pizza_king_redesign_images/horizontalcheckerboard.jpg" alt="horizontal_checkerboard" width="880px"/>
+
+                <h2 class="type">Create Your Own Pizza</h2>
+                <hr>
+
+                <table class="pizza_table" align="center">
+                    <tr>
+                        <td></td>
+                        <td>8 in <br> <u>Thin Individual</u></td>
+                        <td>12 in <br> <u>Thin Small</u></td>
+                        <td>12 in <br> <u>Hand-Tossed</u></td>
+                        <td>14 in <br> <u>Thin Medium</u></td>
+                        <td>14 in <br> <u>Hand-Tossed</u></td>
+                        <td>16 in <br> <u>Thin Large</u></td>
+                    </tr>
+                    <tr>
+                        <td>1 Topping</td>
+                        <td>$5.49</td>
+                        <td>$9.99</td>
+                        <td>$11.49</td>
+                        <td>$13.25</td>
+                        <td>$15.25</td>
+                        <td>$16.99</td>
+                    </tr>
+                    <tr>
+                        <td>2 Toppings</td>
+                        <td>$6.09</td>
+                        <td>$11.19</td>
+                        <td>$12.69</td>
+                        <td>$14.65</td>
+                        <td>$16.65</td>
+                        <td>$18.79</td>
+                    </tr>
+                    <tr>
+                        <td>Each Extra Topping</td>
+                        <td>$0.60</td>
+                        <td>$1.20</td>
+                        <td>$1.20</td>
+                        <td>$1.40</td>
+                        <td>$1.40</td>
+                        <td>$1.80</td>
+                    </tr>
+                </table>
+
+                    <br>
+
+                <p class="center"><u>Pizza Toppings</u></p>
+
+                <table class="pizza_toppings">
+                    <tr>
+                        <td class="left">Chicken</td>
+                        <td class="left">Italian Sausage</td>
+                        <td class="left">Green Olives</td>
+                        <td class="left">Fresh Spinach</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Extra Mozzarella</td>
+                        <td class="left">Beef</td>
+                        <td class="left">Black Olives</td>
+                        <td class="left">Fresh Tomatoes</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Provolone Cheese</td>
+                        <td class="left">Pepperoni</td>
+                        <td class="left">Fresh Mushrooms</td>
+                        <td class="left">Fresh Onions</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Cheddar Cheese</td>
+                        <td class="left">Canadian Bacon</td>
+                        <td class="left">Canned Mushrooms</td>
+                        <td class="left">Green Peppers</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Pesto Sauce</td>
+                        <td class="left">Bacon</td>
+                        <td class="left">Pineapple</td>
+                        <td class="left">Jalapenos</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Barbecue Sauce</td>
+                        <td class="left">Meatballs</td>
+                        <td class="left">Banana Peppers</td>
+                        <td class="left">Artichoke Hearts</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Alfredo Sauce</td>
+                        <td class="left">Salami</td>
+                        <td class="left">Sauerkraut</td>
+                        <td class="left">Sour Cream</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="left">Crab</td>
+                        <td class="left">Ham</td>
+                        <td class="left">Gyro Meat</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <h2 class="type">In House Pizzas</h2>
+                <hr>
+                <p class="food"><u>King Special</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $20.85</p>
+                <p class="sub">Italian Sausage Or Beef, Pepperoni, Onions, Green Peppers,<br> Green Or Black Olives, Fresh
+                    Or Canned Mushrooms, Mozzarella</p>
+                <p class="food"><u>Terry's Italian Pie</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $19.45</p>
+                <p class="sub">Italian Sausage, Spinach, Fresh Mushrooms, Mozzarella, Provolone<br> Oregano & </p>
+                <p class="food"><u>Chicago Classic</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $18.05</p>
+                <p class="sub">Italian Sausage, Tomatoes, Provolone, Mozzarella & Oregano</p>
+                <p class="food"><u>Perfect Pineapple</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .$19.45</p>
+                <p class="sub">Pineapple, Canadian Bacon, Onions, Green Peppers, Mozzarella</p>
+                <p class="food"><u>Milo's Meat Pizza</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .$20.85</p>
+                <p class="sub">Pepperoni, Canadian Bacon, Beef, Italian Sausage, Bacon Pieces,<br> Mozzarella </p>
+                <p class="food"><u>Bacon Double Cheeseburger</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $19.45</p>
+                <p class="sub">Double Beef, Bacon, Mozzarella, Cheddar</p>
+                <p class="food"><u>Taco Pizza</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .$22.25</p>
+                <p class="sub">Cheddar Cheese, Black Olives, Onions, Tomatoes, Beef, Tortilla <br> Chips, Lettuce, Taco
+                    Sauce, Mozzarella</p>
+                <p class="food"><u>Buffalo Chicken</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $18.05</p>
+                <p class="sub">Grilled Chicken, Frank's Red Hot, Ranch Dressing & Mozzarella</p>
+                <p class="food"><u>Chicken Bacon Ranch</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $19.45</p>
+                <p class="sub">Grilled Chicken, Bacon, Ranch Dressing & Mozzarella</p>
+                <p class="food"><u>Pesto Chicken Deluxe</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $23.65</p>
+                <p class="sub">Pesto Sauce, Grilled Chicken, Onions, Green Peppers, Fresh <br> Mushrooms, Mozzarella</p>
+                <p class="food"><u>Chicken Club</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .$20.85</p>
+                <p class="sub">Grilled Chicken, Bacon, Tomatoes, Mozzarella & Cheddar</p>
+                <p class="food"><u>BBQ Chicken</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .$22.25</p>
+                <p class="sub">BBQ Sauce, Grilled Chicken, Onions, Bacon, Mozzarella & Cheddar</p>
+                <p class="food"><u></u>Annie's Gourmet Vegetarian</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $22.25</p>
+                <p class="sub">Artichoke Hearts, Onions, Spinach, Black Olives, Fresh Mushrooms, <br> Mozzarella &
+                    Seasonings</p>
+                <p class="food"><u>Veggie's Classic</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $20.85</p>
+                <p class="sub">Spinach, Onions, Green Peppers, Fresh Mushrooms, Mozzarella, <br> Provolone & Seasonings</p>
+                <p class="food"><u>Garden</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .$20.85</p>
+                <p class="sub">Tomatoes, Onions, Black Olives, Fresh Mushrooms, Green Peppers, <br> Mozzarella, Cheddar &
+                    Seasonings</p>
+                <p class="food"><u>Wisconsin White</u> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $22.25</p>
+                <p class="sub">Artichoke Hearts, Spinach, Tomatoes, Black Olives, & Mozzarella On <br> Our White Pizza Sauce
+                </p>
+
+            </div>
+
+            <br>
+
+        <div class="subs" id="subs">
+            <h1 class="category">SUBS</h1>
+
+            <img src="pizza_king_redesign_images/horizontalcheckerboard.jpg" alt="horizontal_checkerboard" width="880px"/>
+
+            <table class="sub_price" align="center">
+                <tr>
+                    <td class="price"><u>Two Feet</u></td>
+                    <td class="price"><u>One Foot</u></td>
+                    <td class="price"><u>Nine Inches</u></td>
+                    <td class="price"><u>Six Inches</u></td>
+                </tr>
+                <tr>
+                    <td class="price">$19.99</td>
+                    <td class="price">$10.49</td>
+                    <td class="price">$7.99</td>
+                    <td class="price">$5.49</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <p class="food"><u>Alan's All American</u></p>
+            <p class="sub">Ham, bologna, summer sausage, american cheese</p>
+            <p class="food"><u>Bev's Beef Special</u></p>
+            <p class="sub">Lean roast beef, salami, summer sausage, swiss and cheddar cheese</p>
+            <p class="food"><u>Ham And Swiss</u></p>
+            <p class="sub">95% lean ham</p>
+            <p class="food"><u>Ray's Roast Beef And Mozzarella</u></p>
+            <p class="sub">97% lean roast beef</p>
+            <p class="food"><u>Italian Sub</u></p>
+            <p class="sub">Salami, pepperoni, and mozzarella</p>
+            <p class="food"><u>Roast Beef - Canadian Bacon - Swiss</u></p>
+            <p class="sub">Dark savory roast beef, canadian bacon, cheese</p>
+            <p class="food"><u>Turkey Breast - Ham - Cheddar</u></p>
+            <p class="sub">White moist turkey breast, ham, and cheese</p>
+            <p class="food"><u>Roast Beef - Ham - Turkey - Swiss</u></p>
+            <p class="sub">Savory dark roast beef, ham, and white cheese</p>
+            <p class="food"><u>Tuna Salad And Cheddar</u></p>
+            <p class="sub">Our own tasty recipe</p>
+            <p class="food"><u>Steve's Four Cheese Sub</u></p>
+            <p class="sub">Swiss, America, Cheddar, Mozarella</p>
+            <p class="food"><u>Turkey Breast And Swiss</u></p>
+            <p class="sub">98% lean turkey</p>
+            <p class="food"><u></u>Ken's Pizza Sub</u></p>
+            <p class="sub">Pepperoni, provolone, pizza sauce, served warm</p>
+            <p class="food"><u>Reuben</u></p>
+            <p class="sub">97% lean corned beef, swiss sauerkraut, thousand island dressing, served warm</p>
+            <p class="food"><u>Kristy's Sub</u></p>
+            <p class="sub">Roast Beef, corned beef, summer sausage, swiss</p>
+            <p class="food"><u>Elizabeth's Ham - Pepperoni - Cheddar</u></p>
+            <p class="sub">Includes ham pepperoni and cheese</p>
+            <p class="food"><u>Bologna - Salami - American</u></p>
+            <p class="sub">Bologna, circular salami, and cheese</p>
+            <p class="food"><u>BLT</u></p>
+            <p class="sub">Bacon, lettuce, tomato, mayo, served warm</p>
+            <p class="food"><u>Salami - Ham - Pepperoni - Cheddar</u></p>
+            <p class="sub">Includes salami, ham, pepperoni, and any cheese</p>
+            <p class="food"><u>Meatball And Mozzarella</u></p>
+            <p class="sub">With pizza sauce, served warm</p>
+            <p class="food"><u>Leo's Garden Sub</u></p>
+            <p class="sub">Cheddar cheese, spinach, black olives, choice of vegetables</p>
+            <p class="food"><u>Seafood And Crab</u></p>
+            <p class="sub">A blend of Alaskan pollock and snow crab with mozarella</p>
+
+            <br>
+
+
+            <h2 class="type">Sub Party Trays</h2>
+            <hr>
+            <p class="food">Choose your favorite cold sub, add your choice of veggies & dressings, and we will turn<br> it into a party tray.
+                Sliced every 2", with frilled toothpicks. 4 ft. feeds 8-12, 6 ft. feeds 12-18,<br>8 ft. feeds 16-20.</p>
+            <table class="sub_price" align="center">
+                <tr>
+                    <td class="price"><u>Eight Feet</u></td>
+                    <td class="price"><u>Six Feet</u></td>
+                    <td class="price"><u>Four Feet</u></td>
+                    <td class="price"></td>
+                </tr>
+                <tr>
+                    <td class="price">$76.99</td>
+                    <td class="price">$57.99</td>
+                    <td class="price">$38.99</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+            <br>
+
+            <div class="gyros" id="gyros">
+                <h1 class="category">GYROS</h1>
+                <img src="pizza_king_redesign_images/horizontalcheckerboard.jpg" alt="horizontal_checkerboard" width="880px"/>
+
+
+                <p class="food">Greek Gyro. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    . . . . . . . . . . . . . . . . . . . . . . . . . . $5.49</p>
+                <p class="sub">Chicken or Beef, Provolone Cheese, Black Olives, Onions, Lettuce, Tomato & Creamy Cucumber Sauce on
+                    <br>Pita Bread</p>
+                <p class="food">Garden Gyro. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    . . . . . . . . . . . . . . . . . . . . . . . . . . $4.99</p>
+                <p class="sub">Provolone Cheese, Black Olives, Onions, Lettuce, Tomato & Creamy Cucumber Sauce on
+                    Pita Bread</p>
+
+                <br>
+
+                <h2 class="type">Extras</h2>
+                <hr>
+                <p class="food">Double Meat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    . . . . . . . . . . . . . . . . . . . . . . . . .$1.49</p>
+                <p class="food">Lettuce . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    . . . . . . . . . . . . . . . . . . . . . . . . . . . . $0.10</p>
+                <p class="food">Black Olives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    . . . . . . . . . . . . . . . . . . . . . . . . . .$0.30</p>
+                <p class="food">Extra Sauce . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    . . . . . . . . . . . . . . . . . . . . . . . . . .$0.59</p>
+                <p class="food">Cheese . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    . . . . . . . . . . . . . . . . . . . . . . . . . . . $0.50</p>
+            </div>
+
+                <br>
+
+
+
+        <div class="salads" id="salads">
+
+            <h2 class="category">SALADS</h2>
+
+            <img src="pizza_king_redesign_images/horizontalcheckerboard.jpg" alt="horizontal_checkerboard" width="880px"/>
+
+            <p class="food">Ham, Turkey, & Cheddar Salad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . $5.99</p>
+            <p class="food">Ham, Pepperoni & Mozzarella Salad . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . .$5.99</p>
+            <p class="food">Garden Salad With Cheddar Cheese . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . .$4.99</p>
+            <p class="food">Seafood/Crab & Mozzarella Salad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . .$5.99</p>
+            <p class="food">Grilled Chicken & Swiss Salad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . . . $6.99</p>
+            <p class="food">Salads made with a blend of lettuce and fresh spinach with your choice of
+                veggies<br> and dressing</p>
+            <table class="salad_toppings">
+                <tr>
+                    <td class="price">Tomatoes</td>
+                    <td class="price">Green Peppers</td>
+                    <td class="price">Italian</td>
+                </tr>
+                <tr>
+                    <td class="price">Jalapeño</td>
+                    <td class="price">Black Olives</td>
+                    <td class="price">Blue Cheese</td>
+                </tr>
+                <tr>
+                    <td class="price">Pickles</td>
+                    <td class="price">Onions</td>
+                    <td class="price">Fat-Free Ranch</td>
+                </tr>
+                <tr>
+                    <td class="price">Thousand Island</td>
+                    <td class="price">Ranch</td>
+                    <td class="price">French</td>
+                </tr>
+                <tr>
+                    <td>Banana Peppers</td>
+                </tr>
+            </table>
+
+
+        </div>
+
+    </div><!--Closing Menu Div-->
+
+
+</div>
+
+</div> <!--closing div for big wrapper-->
+
+</body>
+</html>
